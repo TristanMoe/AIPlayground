@@ -96,6 +96,7 @@
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\VignetteModel.cs" />
     <Compile Include="Assets\Scripts\Graphs\WayPointManager.cs" />
+    <Compile Include="Assets\Scripts\Graphs\FollowPathWayPoint.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\PostProcessingProfile.cs" />
@@ -115,7 +116,9 @@
     <Compile Include="Assets\Scripts\Adam\UpdateMove.cs" />
     <Compile Include="Assets\Scripts\Graphs\Edge.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-    <Compile Include="Assets\Scripts\Graphs\FollowPathWayPoint.cs" />
+    <Compile Include="Assets\Scripts\NavMesh\AgentManager.cs" />
+    <Compile Include="Assets\Scripts\NavMesh\ChasePlayer.cs" />
+    <Compile Include="Assets\Scripts\NavMesh\AIControl.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TANKASSETS\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
