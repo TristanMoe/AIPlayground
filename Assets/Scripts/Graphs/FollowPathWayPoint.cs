@@ -4,11 +4,11 @@ namespace Assets.Scripts.Graphs
 {
     class FollowPathWayPoint : MonoBehaviour
     {
+        public GameObject wpManager;
         Transform goal;
         float speed = 5.0f;
         float accuracy = 1.0f;
         float rotspeed = 2.0f;
-        public GameObject wpManager;
         GameObject[] wps;
         GameObject currentNode;
         int currentWP = 0;

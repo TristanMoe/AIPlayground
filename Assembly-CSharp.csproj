@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\Attack.cs" />
     <Compile Include="Assets\Scripts\Graphs\WaypointDebug.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Scripts\Tanks\Shoot.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\Graphs\Graph.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\Pursue.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Scripts\NavMesh\FollowNavMesh.cs" />
     <Compile Include="Assets\Scripts\Tanks\ShellDeprecated.cs" />
@@ -81,8 +83,10 @@
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\Scripts\NavMesh\ChasePlayer.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyState.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\Scripts\FSM\GameEnvironment.cs" />
     <Compile Include="Assets\Scripts\Tanks\DestroyShell.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\GrainModel.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
@@ -90,6 +94,7 @@
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Scripts\Graphs\Node.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Scripts\FSM\AI.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
@@ -98,6 +103,7 @@
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\Scripts\NavMesh\AIControl.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\Patrol.cs" />
     <Compile Include="Assets\Scripts\Graphs\WayPointManager.cs" />
     <Compile Include="Assets\Scripts\Graphs\FollowPathWayPoint.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
@@ -115,18 +121,13 @@
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
     <Compile Include="Assets\Scripts\Adam\SecondsUpdate.cs" />
     <Compile Include="Assets\Scripts\WayPoints\FollowWayPoint.cs" />
+    <Compile Include="Assets\Scripts\FSM\EnemyStates\Safe.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Components\UserLutComponent.cs" />
     <Compile Include="Assets\Scripts\Adam\UpdateMove.cs" />
     <Compile Include="Assets\Scripts\Graphs\Edge.cs" />
     <Compile Include="Assets\TANKASSETS\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
-    <Compile Include="Assets\Scripts\FSM\GameEnvironment.cs" />
-    <Compile Include="Assets\Scripts\FSM\EnemyState.cs" />
     <Compile Include="Assets\Scripts\FSM\EnemyStates\Idle.cs" />
-    <Compile Include="Assets\Scripts\FSM\EnemyStates\Patrol.cs" />
-    <Compile Include="Assets\Scripts\FSM\AI.cs" />
-    <Compile Include="Assets\Scripts\FSM\EnemyStates\Pursue.cs" />
-    <Compile Include="Assets\Scripts\FSM\EnemyStates\Attack.cs" />
-    <Compile Include="Assets\Scripts\FSM\EnemyStates\Safe.cs" />
+    <Compile Include="Assets\Scripts\AutoBehaviour\Bot.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TANKASSETS\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
