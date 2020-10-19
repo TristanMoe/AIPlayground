@@ -30,6 +30,8 @@ public abstract class GAction : MonoBehaviour
     // Are we currently performing an action?
     public bool running = false;
 
+    public GInventory inventory; 
+
     // Constructor
     public GAction()
     {
@@ -64,6 +66,9 @@ public abstract class GAction : MonoBehaviour
                 effects.Add(w.key, w.value);
             }
         }
+
+        inventory = this.GetComponent<GAgent>().inventory;
+        agentBeliefs = this.GetComponent<GAgent>().beliefs; 
     }
 
     public bool IsAchievable()

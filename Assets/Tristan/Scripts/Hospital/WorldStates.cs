@@ -51,7 +51,7 @@ public class WorldStates
     }
 
     // Method to remove a state
-    private void RemoveState(string key)
+    public void RemoveState(string key)
     {
         // Check if it frist exists
         if (HasState(key))

@@ -21,6 +21,9 @@ public class GAgent : MonoBehaviour
 {
     public List<GAction> actions = new List<GAction>();
     public Dictionary<SubGoal, int> goals = new Dictionary<SubGoal, int>();
+    public GInventory inventory = new GInventory();
+    public WorldStates beliefs = new WorldStates(); 
+
 
     // Calculates actions that satifisfy goal. 
     GPlanner planner;
@@ -33,6 +36,7 @@ public class GAgent : MonoBehaviour
     {
         GAction[] acts = this.GetComponents<GAction>(); 
         actions.AddRange(acts);
+        
     }
 
     bool invoked = false; 
@@ -49,7 +53,9 @@ public class GAgent : MonoBehaviour
     {
         if(currentAction != null && currentAction.running)
         {
-            if(currentAction.agent.hasPath && currentAction.agent.remainingDistance < 1f)
+            float distanceToTarget = Vector3.Distance(currentAction.target.transform.position, this.transform.position);
+            // Remember to change distance threshold for different objects! 
+            if (currentAction.agent.hasPath && distanceToTarget < 2f)
             {
                 if(!invoked)
                 {
@@ -67,7 +73,7 @@ public class GAgent : MonoBehaviour
 
             foreach(KeyValuePair<SubGoal, int> sq in sortedGoals)
             {
-                actionQueue = planner.Plan(actions, sq.Key.sgoals, null); 
+                actionQueue = planner.Plan(actions, sq.Key.sgoals, beliefs); 
                 if(actionQueue != null)
                 {
                     currentGoal = sq.Key;
